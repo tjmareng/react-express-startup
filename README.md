@@ -31,14 +31,14 @@ These instructions will get you a copy of the project up and running on your loc
 Clone the project, change into the directory and install the dependencies.
 
 ```
-git clone https://github.com/philnash/react-express-starter.git
-cd react-express-starter
-npm install
+git clone https://github.com/tjmareng/react-express-startup.git
+cd react-express-startup
+npm install or npm i
 ```
 
 ### Prerequisites
 
-Installing Node.js:
+Installing Node.js and NPM:
 
 ```
 1. Visit https://nodejs.org/en/ or https://nodejs.org/en/download/
@@ -48,16 +48,7 @@ Installing Node.js:
 5. Open the terminal and type 'node --version'
 6. v11.12.0 or another version should appear
 ```
-Installing npm:
-
-```
-1. Visit https://nodejs.org/en/ or https://nodejs.org/en/download/
-2. Click on the 'Current' Download or click the 'Current' Tab within the download page
-3. Run the file
-4. After installation, close the terminal
-5. Open the terminal and type 'node --version'
-6. v11.12.0 or another version should appear
-```
+Reference [this](https://wsvincent.com/install-node-js-npm-windows/) page if you run into any issues.
 
 ### Installing
 
