@@ -28,7 +28,7 @@ This project is designed to help you jump right into a starter project with a Re
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-Clone the project, change into the directory and install the dependencies.
+Clone the project, change into the directory, and install the dependencies:
 
 ```
 git clone https://github.com/tjmareng/react-express-startup.git
@@ -42,11 +42,11 @@ Installing Node.js and NPM:
 
 ```
 1. Visit https://nodejs.org/en/ or https://nodejs.org/en/download/
-2. Click on the 'Current' Download or click the 'Current' Tab within the download page
+2. Click on the 'Recommended For Most Users' Download or click the 'LTS' Tab within the download page
 3. Run the file
 4. After installation, close the terminal
 5. Open the terminal and type 'node --version'
-6. v11.12.0 or another version should appear
+6. v10.15.3 or a later version should appear
 ```
 Reference [this](https://wsvincent.com/install-node-js-npm-windows/) page if you run into any issues.
 
@@ -64,17 +64,13 @@ Installing node_modules:
 Creating an environment:
 
 ```
-1. Create a file called `.env` in the project directory to store our environment variables. 
+1. Create a file called '.env' in the project directory to store our environment variables. 
 2. This will be useful later for including any credentials we need for the server, like API keys.
 ```
 
 ### Deployment
 
-First, we are going to set up the proxy to our server. Add the "proxy" key to package.json. We've already set our server to run on port 3001, so point the proxy at localhost:3001.
-
-`"proxy": "http://localhost:3001"`
-
-Run `npm run dev` and both the React application and the server will start up. However, we now can't load localhost:3000/api/greeting in the browser because the Create React App proxy will just respond with the base HTML.
+Run `npm run dev` and both the React application and the server will start up. However, we now can't load localhost:3000/greeting in the browser because the Create React App proxy will just respond with the base HTML.
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser. You should be able to select submit and 'Hello World' should appear. Otherwise, you can type your name that that will appear in place of 'World'.
 
@@ -100,12 +96,9 @@ This is an effective way to generate access tokens like [JSON Web Tokens](https:
 
 Missing modules:
 
-```
 run `npm install node-env-run nodemon npm-run-all express-pino-logger pino-colada --save-dev`
-```
-```
+
 run `npm i semantic-ui --save`
-```
 
 ## Available Scripts
 
