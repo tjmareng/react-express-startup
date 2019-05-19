@@ -10,17 +10,17 @@ class App extends React.Component {
       name: "",
       greeting: ""
     };
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    this.change = this.change.bind(this);
+    this.submit = this.submit.bind(this);
   }
 
-  handleChange(event) {
+  change(event) {
     this.setState({ name: event.target.value });
   }
 
-  handleSubmit(event) {
+  submit(event) {
     event.preventDefault();
-    fetch(`/api/greeting?name=${encodeURIComponent(this.state.name)}`)
+    fetch(`/greeting?name=${encodeURIComponent(this.state.name)}`)
       .then(response => response.json())
       .then(state => this.setState(state));
   }
@@ -29,10 +29,10 @@ class App extends React.Component {
     return (
       <div>
         <Segment basic textAlign="center" vertical>
-          <Form class="ui form" onSubmit={this.handleSubmit}>
+          <Form class="ui form" onSubmit={this.submit}>
             <Input
               value={this.state.name}
-              onChange={this.handleChange}
+              onChange={this.change}
               type="text"
               placeholder="First Name"
             />
