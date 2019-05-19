@@ -28,7 +28,7 @@ This project is designed to help you jump right into a starter project with a Re
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-Clone the project, change into the directory and install the dependencies.
+Clone the project, change into the directory, and install the dependencies:
 
 ```
 git clone https://github.com/tjmareng/react-express-startup.git
@@ -70,11 +70,7 @@ Creating an environment:
 
 ### Deployment
 
-First, we are going to set up the proxy to our server. Add the "proxy" key to package.json. We've already set our server to run on port 3001, so point the proxy at localhost:3001.
-
-`"proxy": "http://localhost:3001"`
-
-Run `npm run dev` and both the React application and the server will start up. However, we now can't load localhost:3000/api/greeting in the browser because the Create React App proxy will just respond with the base HTML.
+Run `npm run dev` and both the React application and the server will start up. However, we now can't load localhost:3000/greeting in the browser because the Create React App proxy will just respond with the base HTML.
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser. You should be able to select submit and 'Hello World' should appear. Otherwise, you can type your name that that will appear in place of 'World'.
 
