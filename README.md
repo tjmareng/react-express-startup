@@ -42,11 +42,11 @@ Installing Node.js and NPM:
 
 ```
 1. Visit https://nodejs.org/en/ or https://nodejs.org/en/download/
-2. Click on the 'Current' Download or click the 'Current' Tab within the download page
+2. Click on the 'Recommended For Most Users' Download or click the 'LTS' Tab within the download page
 3. Run the file
 4. After installation, close the terminal
 5. Open the terminal and type 'node --version'
-6. v11.12.0 or another version should appear
+6. v10.15.3 or a later version should appear
 ```
 Reference [this](https://wsvincent.com/install-node-js-npm-windows/) page if you run into any issues.
 
