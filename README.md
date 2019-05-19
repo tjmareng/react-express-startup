@@ -64,7 +64,7 @@ Installing node_modules:
 Creating an environment:
 
 ```
-1. Create a file called `.env` in the project directory to store our environment variables. 
+1. Create a file called '.env' in the project directory to store our environment variables. 
 2. This will be useful later for including any credentials we need for the server, like API keys.
 ```
 
@@ -96,12 +96,9 @@ This is an effective way to generate access tokens like [JSON Web Tokens](https:
 
 Missing modules:
 
-```
 run `npm install node-env-run nodemon npm-run-all express-pino-logger pino-colada --save-dev`
-```
-```
+
 run `npm i semantic-ui --save`
-```
 
 ## Available Scripts
 
